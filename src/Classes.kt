@@ -37,7 +37,7 @@ open class Vehicle(val make: String, val model: String) {
 }
 
 class Car(make: String, model: String, var color: String) : Vehicle(make, model) {
-    override fun accelerate() {
+    override fun accelerate() {//This allows us to override the function present in the parent class and we can edit the funtion in the child class
         println("We are going ludicrous mode!")
         super.accelerate()
     }
